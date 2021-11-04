@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #293c5d;
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+  font-family: "Rubik", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 50px 0;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-areas: "header" "main";
+}
+
+.header {
+  grid: header;
+  border-bottom: 1px solid #99999950;
+}
+
+.header a {
+  padding: 0.8rem 0;
+}
+
+.doc-img {
+  width: 60px;
+  height: 60px;
+  background-color: #eb6625;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.doc-texts {
+  margin-left: 1rem;
+}
+
+.doc-texts h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #293c5d;
+}
+
+.doc-texts p {
+  font-size: 1rem;
+  color: #8294c4ee;
+}
+
+.logo-teddy {
+  width: 120px;
+}
+
+/* infos */
+
+.info {
+  height: calc(100vh - 122.59px - 50px);
+  flex: 1;
+  border-right: 1px solid #99999950;
+  font-size: 0.9rem;
+  padding: 1.2rem 1.5rem !important;
+}
+
+.info h2 {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.info span {
+  color: #8294c4ee;
+  margin-left: 0.5rem;
+}
+
+.info div + div {
+  margin-top: 1rem;
+}
+
+.docs {
+  flex: 1;
+  padding: 1.2rem 1rem;
+}
+
+.docs-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0 1rem 0 0;
+}
+.docs button.btn-orange {
+  background-color: #eb6625;
+  border-radius: 30px;
+  margin-right: 1rem;
+  padding: 0 2rem;
+  color: white;
+}
+.docs .btn-inter {
+  width: 50px;
+  height: 50px;
+  background-color: #eb6625;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.docs .btn-inter span {
+  font-size: 2rem;
+  color: white;
+}
+
+.docs .btn-inter:hover,
+.docs .btn-orange:hover {
+  color: white;
+  background-color: orange;
+}
+
+.docs-infos {
+  padding: 1rem;
+}
+
+.docs-infos h2 {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border: 0;
+  border-style: none !important;
+}
+
+thead tr th {
+  color: #39455b;
+  flex: 3;
+}
+
+thead tr th:last-of-type {
+  flex: 1;
+  padding: 0 0 0 1rem;
+  text-align: center;
+  border-left: 1px solid #99999950 !important;
+}
+
+tbody tr {
+  padding: 0.2rem 0;
+  background-color: #f9fafc;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+tbody tr + tr {
+  margin-top: 1rem;
+}
+
+tbody tr td {
+  color: #293c5d88;
+  margin-left: 0.5em;
+  flex: 3;
+}
+
+tbody tr td:last-of-type {
+  flex: 1;
+}
+
+tbody tr td a.btn-status {
+  padding: 0.3rem 0.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+.btn-status i {
+  margin-right: 0.1rem;
+}
