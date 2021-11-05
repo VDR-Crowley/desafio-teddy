@@ -81,6 +81,9 @@
   border-left: 1px solid #99999950 !important;
 }
 
+tbody .list-item td {
+  color: #293c5d;
+}
 .search-result .list-item td .finance-img {
   width: 40px;
   height: 40px;
@@ -131,10 +134,26 @@
   grid-area: pages;
 }
 
-.pages a {
+.pages .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #33333350;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
 }
 
-.pages .circle {
+.pages .circle.circle-active {
+  color: white;
+  background-color: #eb6625;
+}
+
+.pages a span:hover,
+.pages a span i:hover {
+  color: #eb6625;
 }
 
 .btn-area-agenda {
@@ -147,6 +166,10 @@
   text-decoration: none;
   background: #293c5d;
   border-radius: 30px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   align-self: center;
+}
+
+.btn-area-agenda .btn-agenda:hover {
+  background: #293c7d;
 }
