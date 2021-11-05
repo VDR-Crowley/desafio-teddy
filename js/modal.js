@@ -5,11 +5,9 @@ const modal = document.querySelector('.modal-open');
 const buttonOrange = document.querySelector('.btn-orange');
 const buttonHelp = document.querySelector('.btn-help ');
 
-// variavei da segunda tela
-const pages = document.querySelector('.pages');
-const previous = document.querySelector('.anterior');
-const next = document.querySelector('.proximo');
-const circle = document.querySelectorAll('.circle');
+// variaveis da segunda tela
+const pages = document.querySelectorAll('.pages a');
+
 
 // funções primeira tela
 function openModal() {
@@ -18,48 +16,45 @@ function openModal() {
     modalArea.style.width = "100vw";
     modal.style.display = "grid";
     buttonClose.addEventListener('click', closeModal);
+    document.body.style.overflow = 'hidden';
   }
 }
 function closeModal() {
   modal.classList.remove('open');
   modalArea.style.width = "0";
   modal.style.display = "none";
+  document.body.style.overflow = 'auto';
 }
 
 function btnHelp() {
   alert("Pedido de ajuda!");
 }
 
-// funções segunda tela
-
 buttonOrange.addEventListener('click', openModal);
 buttonHelp.addEventListener('click', btnHelp);
-/*
-pages.addEventListener('click', () => {
-  previous.addEventListener('click', () => {
-    circle.forEach((item) => {
-      if(item.classList.contains('circle-active') !== true) {
-        item.classList.add('circle-active');
-      } else {
-        item.classList.remove('circle-active');
-      }
-    })
-  });
 
-  next.addEventListener('click', () => {
-    circle.forEach((item) => {
-      if(item.classList.contains('circle-active') !== true) {
-        item.classList.add('circle-active');
-      } else {
-        item.classList.remove('circle-active');
-      }
-    })
-  });
-  
-})*/
 
-console.log(buttonClose);
-console.log(modalArea);
-console.log(modal);
-console.log(buttonOrange);
-console.log(buttonOrange);
+// paginação segunda tela
+pages.forEach((page) => {
+  page.addEventListener('click', () => {
+
+
+    if(page.classList.contains('active') !== true) {
+
+      if(page.classList.contains("proximo")) {
+        page.classList.add('active');
+        page.previousElementSibling.classList.remove('active');
+        page.previousElementSibling.querySelector('div').classList.remove('circle-active');
+        page.querySelector('div').classList.add('circle-active');
+      }
+      else if(page.classList.contains('anterior')) {
+        page.classList.add('active');
+        page.nextElementSibling.classList.remove('active');
+        page.nextElementSibling.querySelector('div').classList.remove('circle-active');
+        page.querySelector('div').classList.add('circle-active');
+      }
+
+    }
+
+  });
+});

@@ -1,0 +1,103 @@
+@media (max-width: 967px) {
+  .modal-open {
+    width: 90% !important;
+    height: 90%;
+  }
+
+  .coins-texts h1 {
+    font-size: 1rem;
+  }
+
+  .coins-texts p {
+    font-size: 0.9rem;
+  }
+
+  .modal-open .doc-img {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .close i {
+    font-size: 1.5rem;
+  }
+
+  .search-result .thead-modal tr th {
+    font-size: 0.8rem;
+  }
+
+  tbody .list-item td {
+    font-size: 0.8rem;
+  }
+
+  .search-result .list-item td .finance-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .search-result tr td .btn-status {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .modal-open {
+    grid-template-rows: 100px 80px 1fr 100px 100px;
+  }
+
+  .search-result {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-open {
+    padding: 0;
+  }
+
+  .modal-open .doc-img {
+    width: 50px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .coins-texts p {
+    font-size: 0.9rem;
+    white-space: normal !important;
+  }
+
+  .results span {
+    font-size: 0.9rem;
+  }
+
+  .pages span {
+    font-size: 0.9rem;
+  }
+
+  .bottom-area {
+    grid-area: bottom-area;
+    padding: 0 1rem;
+  }
+
+  .btn-area-agenda {
+    padding: 1rem;
+  }
+
+  .btn-area-agenda .btn-agenda {
+    font-size: 0.9rem;
+  }
+  /*
+  .close {
+    top: 0;
+    right: 20%;
+  }*/
+}

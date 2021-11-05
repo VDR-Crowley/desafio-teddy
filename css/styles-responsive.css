@@ -1,4 +1,13 @@
 @media (max-width: 769px) {
+  .logo-teddy {
+    width: 100px;
+    order: 1;
+  }
+
+  .doc-texts p {
+    white-space: normal;
+  }
+
   .info {
     height: auto;
   }
@@ -7,5 +16,29 @@
     display: flex;
     font-size: 0.7rem;
     align-items: center;
+    justify-content: center;
+    width: 90px;
+  }
+}
+
+@media (max-width: 555px) {
+  .logo-teddy {
+    justify-self: center;
+    order: -1;
+  }
+}
+
+@media (max-width: 390px) {
+  .doc-img {
+    width: 50px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .docs-button {
+    padding: 0;
+  }
+  .docs button.btn-orange {
+    margin-right: 0rem;
   }
 }
