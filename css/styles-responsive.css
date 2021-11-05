@@ -2,4 +2,10 @@
   .info {
     height: auto;
   }
+
+  tbody tr td a.btn-status {
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+  }
 }
