@@ -1,0 +1,152 @@
+.modal-area {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: #00000080;
+  z-index: 2 !important;
+  overflow: hidden;
+}
+
+.modal-open {
+  background: #fff;
+  width: 70%;
+  height: 90%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-rows: 100px 80px 1fr 50px 100px;
+  grid-template-areas:
+    "header-open header-open"
+    "research-field research-field" "search-result search-result"
+    "bottom-area pages" "btn btn";
+}
+
+.header-open {
+  padding: 2rem 1rem;
+  align-self: center;
+}
+
+.coins-texts {
+  margin-left: 1rem;
+}
+
+.coins-texts h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.coins-texts p {
+  font-size: 1rem;
+  color: #33333399;
+}
+
+.close {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close i {
+  color: #33333399;
+  font-size: 2.5rem;
+}
+
+.research-field {
+  grid-area: research-field;
+  padding: 0 1.5rem 0;
+}
+.research-field label {
+  font-weight: 600;
+}
+.research-field input,
+.research-field input:focus {
+  background-color: #33333320;
+}
+
+.search-result {
+  grid-area: search-result;
+  padding: 1.5rem;
+}
+
+.search-result .list-item {
+  border-top: 1px solid #99999950 !important;
+}
+
+.search-result .thead-modal tr th + th {
+  border-left: 1px solid #99999950 !important;
+}
+
+.search-result .list-item td .finance-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.recente-item span {
+  margin-left: 1rem;
+}
+
+.search-result tr td .btn-status {
+  width: 150px;
+}
+
+.acao-item {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-area {
+  grid-area: bottom-area;
+  padding: 0 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid #99999950;
+  border-bottom: 1px solid #99999950;
+}
+
+.results {
+}
+
+.results span {
+}
+
+.results a {
+  background: #33333330;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+}
+
+.results a i {
+  margin-left: 0.3rem;
+}
+
+.pages {
+  grid-area: pages;
+}
+
+.pages a {
+}
+
+.pages .circle {
+}
+
+.btn-area-agenda {
+  grid-area: btn;
+  padding: 0 1.5rem;
+  display: flex;
+}
+
+.btn-area-agenda .btn-agenda {
+  text-decoration: none;
+  background: #293c5d;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  align-self: center;
+}

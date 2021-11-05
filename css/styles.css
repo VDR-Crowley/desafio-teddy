@@ -8,6 +8,8 @@
 body {
   background-color: var(--Very-dark-blue);
   font-family: "Rubik", sans-serif;
+  position: relative;
+  z-index: -1 !important;
 }
 
 ul li {
@@ -17,7 +19,7 @@ ul li {
 a {
   display: block;
   color: #333;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
@@ -33,11 +35,9 @@ p {
   display: grid;
   grid-gap: 50px 0;
   grid-template-columns: repeat(auto-fit, 1fr);
-  grid-template-areas: "header" "main";
 }
 
 .header {
-  grid: header;
   border-bottom: 1px solid #99999950;
 }
 
@@ -74,7 +74,7 @@ p {
 /* infos */
 
 .info {
-  height: calc(100vh - 122.59px - 50px);
+  height: calc(100vh - 102.59px - 50px);
   flex: 1;
   border-right: 1px solid #99999950;
   font-size: 0.9rem;
