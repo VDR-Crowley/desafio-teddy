@@ -1,9 +1,9 @@
 .modal-area {
-  width: 100vw;
+  width: 0vw;
   height: 100vh;
   position: fixed;
   top: 0;
-  background: #00000080;
+  background: #00000010;
   z-index: 2 !important;
   overflow: hidden;
 }
@@ -13,7 +13,7 @@
   width: 70%;
   height: 90%;
   border-radius: 20px;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   grid-template-rows: 100px 80px 1fr 50px 100px;
@@ -21,6 +21,21 @@
     "header-open header-open"
     "research-field research-field" "search-result search-result"
     "bottom-area pages" "btn btn";
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.modal-open.open {
+  animation: modal 0.3s;
 }
 
 .header-open {
