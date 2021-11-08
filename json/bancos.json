@@ -1,0 +1,22 @@
+[
+  {
+    "image": "../images/nubank.png",
+    "title": "Nubank",
+    "destination": "Teddy Investimento",
+    "date": "20/07/2021"
+  },
+  
+  {
+    "image": "../images/caixa.png",
+    "title": "Caixa",
+    "destination": "Teddy Investimento",
+    "date": "15/07/2021"
+  },
+
+  {
+    "image": "../images/next.png",
+    "title": "Next",
+    "destination": "Teddy Investimento",
+    "date": "12/07/2021"
+  }
+]

@@ -21,8 +21,6 @@
       crossorigin="anonymous"
     />
 
-
-
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -159,6 +157,7 @@
       </main>
     </div>
     
+    <!-- Modal -->
     <div class="modal-area d-flex justify-content-center align-items-center">
       <div class="modal-open">
         <div class="header-open">
@@ -185,7 +184,10 @@
 
         <div class="research-field">
           <label for="name" class="form-label">Buscar por nome</label>
-          <input class="form-control" type="text" id="name" placeholder="Digite o Nome da instituição">
+          <div class="input-area">
+            <input class="form-control" type="text" id="name" placeholder="Digite o Nome da instituição">
+            <div class="cancelInput"><i class="fas fa-times"></i></div>
+          </div>
         </div>
 
         <div class="search-result table-responsive table-responsive-sm">
@@ -201,41 +203,7 @@
               </tr>
             </thead>
 
-            <tbody>
-              <tr class="list-item d-flex align-items-center">
-                <td class="d-flex align-items-center recente-item">
-                  <img src="./images/nubank.png" class="finance-img">
-                  <span>Nubank</span>
-                </td>
-
-                <td>
-                  <span>Teddy investimentos</span>
-                </td>
-
-                <td>20/07/2021</td>
-
-                <td>
-                  <a
-                    href="#"
-                    class="
-                      btn-status
-                      text-light
-                      bg-success bg-opacity-50
-                      border border-success
-                    "
-                  >
-                    <i
-                      class="far fa-check-circle text-success"
-                    ></i>
-                    Atualizando
-                  </a>
-                </td>
-
-                <td class="acao-item">
-                  <i class="far fa-check-circle"></i>
-                </td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
 
 
@@ -272,7 +240,8 @@
       </div> <!-- Fim modal-open -->
     </div> <!--Fim modal-area-->
 
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/resq.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

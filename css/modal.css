@@ -83,6 +83,32 @@
   background-color: #33333320;
 }
 
+.input-area {
+  position: relative;
+}
+
+.research-field input {
+}
+
+.cancelInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 39px;
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+}
+.cancelInput {
+  font-size: 1.9rem;
+}
+.cancelInput i {
+  color: #eb6625;
+}
+
 .search-result {
   grid-area: search-result;
   padding: 1.5rem;
@@ -107,6 +133,11 @@ tbody .list-item td {
 
 .recente-item span {
   margin-left: 1rem;
+}
+
+.search-result tbody {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-result tr td .btn-status {

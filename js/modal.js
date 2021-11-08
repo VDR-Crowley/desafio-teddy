@@ -1,3 +1,5 @@
+import { structureTr } from "./resq.js";
+
 // variaveis da primeira tela
 const buttonClose = document.querySelector('.close');
 const modalArea = document.querySelector('.modal-area');
@@ -16,14 +18,14 @@ function openModal() {
     modalArea.style.width = "100vw";
     modal.style.display = "grid";
     buttonClose.addEventListener('click', closeModal);
-    document.body.style.overflow = 'hidden';
+    //document.body.style.overflow = 'hidden';
   }
 }
 function closeModal() {
   modal.classList.remove('open');
   modalArea.style.width = "0";
   modal.style.display = "none";
-  document.body.style.overflow = 'auto';
+  //document.body.style.overflow = 'auto';
 }
 
 function btnHelp() {
@@ -32,6 +34,22 @@ function btnHelp() {
 
 buttonOrange.addEventListener('click', openModal);
 buttonHelp.addEventListener('click', btnHelp);
+
+// carrega o json assim que a pagina é carregada
+window.addEventListener('load', () => {
+  let tbody = document.querySelector('.search-result tbody');
+
+  fetch("./json/bancos.json")
+  .then(response => response.text())
+  .then(json => {
+    console.log("clicou no input");
+    let jsonDados = JSON.parse(json);
+    jsonDados.forEach(item => {
+      tbody.innerHTML += structureTr(item);
+    })
+  });
+})
+
 
 
 // paginação segunda tela
