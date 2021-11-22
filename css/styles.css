@@ -7,7 +7,7 @@
 
 body {
   background-color: var(--Very-dark-blue);
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   position: relative;
   z-index: -1 !important;
 }
@@ -50,6 +50,7 @@ p {
   background-color: #eb6625;
   text-align: center;
   font-size: 1.8rem;
+  padding: 1rem;
 }
 .doc-texts {
   margin-left: 1rem;
